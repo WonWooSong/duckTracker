@@ -10,8 +10,6 @@ class CustomForm extends React.Component {
   handleFormSubmit = async (event, requestType, duckID) => {
     event.preventDefault();
 
-    //var datetime = event.target.elements.date.value+'T'+ event.target.elements.time.value;
-
     const postObj = {
       name: event.target.elements.name.value,
       time: (event.target.elements.date.value + 'T' +event.target.elements.time.value),
@@ -19,7 +17,6 @@ class CustomForm extends React.Component {
       where: event.target.elements.where.value,
       howMany: event.target.elements.howMany.value,
       howMuch: event.target.elements.howMuch.value,
-      //content: event.target.elements.content.value
     }
     console.log(postObj);
 

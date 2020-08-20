@@ -30,7 +30,6 @@ class DuckDetail extends React.Component {
         axios.delete(`http://127.0.0.1:8000/api/${duckID}/delete/`)
         .then(res => {
           if (res.status === 204) {
-            //this.props.history.push(`/`);
           }
         })
       };

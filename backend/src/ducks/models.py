@@ -1,6 +1,8 @@
 from django.db import models
 from datetime import datetime
 
+
+# Model for thie duck report
 class Duck(models.Model):
     name = models.CharField(max_length=120, default='Duck')
     time = models.DateTimeField(default=datetime.now)
