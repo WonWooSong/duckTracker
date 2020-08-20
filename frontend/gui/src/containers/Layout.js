@@ -1,16 +1,8 @@
 import React from 'react'
-import { Layout, Menu, Breadcrumb } from 'antd';
-import {
-  DesktopOutlined,
-  PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
-  UserOutlined,
-} from '@ant-design/icons';
+import { Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 
-const { Header, Content, Footer, Sider } = Layout;
-const { SubMenu } = Menu;
+const { Header, Content } = Layout;
 
 const CustomLayout = (props) => {
     return (
@@ -19,7 +11,8 @@ const CustomLayout = (props) => {
             <div className="logo" />
             <Menu theme="dark" mode="horizontal">
             <Menu.Item key="1"><Link to="/">Home</Link></Menu.Item>
-            <Menu.Item key="2"><Link to="/create">Create</Link></Menu.Item>
+            <Menu.Item key="2"><Link to="/create">Create Report</Link></Menu.Item>
+            <Menu.Item key="3"><Link to="/report">Report Summary</Link></Menu.Item>
             </Menu>
         </Header>
         <Content style={{ padding: '0 50px' }}>

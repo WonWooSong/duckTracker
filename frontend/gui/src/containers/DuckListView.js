@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import Ducks from '../components/Duck';
-import CustomForm from '../components/Form'
 
 class DuckList extends React.Component {
 

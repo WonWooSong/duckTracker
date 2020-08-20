@@ -1,7 +1,6 @@
 import React from 'react';
-import { List, Avatar, Space } from 'antd';
-import { CalendarOutlined, GlobalOutlined } from '@ant-design/icons';
-
+import { List, Space } from 'antd';
+import { CalendarOutlined } from '@ant-design/icons';
 
 
 const IconText = ({ icon, text }) => (
@@ -30,9 +29,8 @@ const Ducks = (props) => {
               key={item.id}
               actions={[
                 <IconText icon={CalendarOutlined} text={item.time} key="time" />, ]}
-                
             >
-            
+
                 <br/>
             <List.Item.Meta title={<a href={`/info/${item.id}`}> Name:{item.name} </a>} />
             

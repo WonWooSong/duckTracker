@@ -1,19 +1,9 @@
   
 import React from "react";
-import { Form, Input, Button, TimePicker, DatePicker, Space } from "antd";
-import moment from 'moment';
-//import { connect } from "react-redux";
+import { Form, Input, Button } from "antd";
 import axios from "axios";
 
 const FormItem = Form.Item;
-
-function onChange(time, timeString) {
-    console.log(time, timeString);
-}
-
-function onChangedate(date, dateString) {
-    console.log(date, dateString);
-}
 
 class CustomForm extends React.Component {
   
@@ -97,11 +87,5 @@ class CustomForm extends React.Component {
     );
   }
 }
-
-const mapStateToProps = state => {
-  return {
-    token: state.token
-  };
-};
 
 export default (CustomForm);

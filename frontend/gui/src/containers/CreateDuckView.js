@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import Ducks from '../components/Duck';
 import CustomForm from '../components/Form'
 
 class CreateList extends React.Component {
@@ -23,7 +22,7 @@ class CreateList extends React.Component {
             <div>
 
                 <br />
-                <h2> Create Duck Information </h2>
+                <h2> Create Duck Report </h2>
                 <CustomForm requestType="post" btnText="Create" />
             </div>
         )

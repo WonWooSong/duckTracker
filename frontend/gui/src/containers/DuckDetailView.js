@@ -1,8 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { Button, Card, Table, Row, Col } from 'antd';
+import { Button, Card, Row, Col } from 'antd';
 import CustomForm from '../components/Form'
-import { connect } from "react-redux";
 
 
 class DuckDetail extends React.Component {
@@ -39,7 +38,7 @@ class DuckDetail extends React.Component {
     render() {
         return (
             <div>
-                <h2> Detailed Duck Information </h2>
+                <h2> Detailed Duck Report </h2>
 
                 <Card id={this.state.duck.id}>
                     <Row>
@@ -98,7 +97,7 @@ class DuckDetail extends React.Component {
 
                 </Card>
 
-                <h2> Update Duck Information </h2>
+                <h2> Update Duck Report </h2>
                 <CustomForm requestType="put" duckID={this.props.match.params.duckID} btnText="Update" />
 
                 <form onSubmit={this.handleDelete}>
@@ -109,7 +108,6 @@ class DuckDetail extends React.Component {
 
             </div>
 
-            
         )
     }
 }
